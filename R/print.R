@@ -5,7 +5,7 @@
 #' @param ... Des arguments additionnels.
 #' @return Les résultats du test de khi-2 de façon très concise
 #' @export
-#' @author Samira Amani & Samuel Forcier
+#' @author Samira Amani & Samuel Forcier & Taous Sifouane
 # #' @examples
 # #' print.chisq_table_context(x=mtcars)
 

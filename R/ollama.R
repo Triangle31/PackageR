@@ -2,49 +2,6 @@
 
 #' @export
 
-# ollama_generate <- function(prompt, model = "gemma3:4b") {
-#   # Fichier temporaire pour capturer la sortie propre
-#   outfile <- tempfile(fileext = ".txt")
-#
-#   # Désactiver couleurs si supporté
-#   Sys.setenv(OLLAMA_NO_COLOR = "1")
-#   Sys.setenv(NO_COLOR = "1")
-#
-#   # Commande Windows QUI MARCHE TOUJOURS
-#   cmd <- sprintf('ollama run %s "%s" > "%s"', model, prompt, outfile)
-#
-#   # Exécution silencieuse
-#   shell(cmd, intern = FALSE, mustWork = FALSE)
-#
-#   # Lecture du fichier généré par Ollama
-#   if (file.exists(outfile)) {
-#     out <- readLines(outfile, warn = FALSE)
-#
-#     # Nettoyage final (au cas où)
-#     out <- gsub("\033\\[[0-9;]*[A-Za-z]", "", out)
-#     out <- gsub("\033\\(B", "", out)
-#     out <- gsub("[\r\b]", "", out)
-#
-#     return(paste(out, collapse = "\n"))
-#   } else {
-#     return("Erreur : Ollama n’a rien écrit.")
-#   }
-# }
-###################################################
-
-# ollama_generate <- function(prompt, model = "gemma3:4b") {
-#   tmp <- tempfile(fileext = ".txt")
-#   writeLines(prompt, tmp)
-#
-#   # Commande Windows : type fichier | ollama run
-#   cmd <- sprintf('type "%s" | ollama run %s', tmp, model)
-#
-#   output <- shell(cmd, intern = TRUE)
-#   paste(output, collapse = "\n")
-# }
-
-########################################################
-
 clean_spinner <- function(text) {
   x <- paste(text, collapse = "\n")
 

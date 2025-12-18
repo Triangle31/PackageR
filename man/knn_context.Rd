@@ -26,3 +26,6 @@ k plus proches voisins (k-NN) sur deux variables
 numériques et une variable de classe, puis demande
 à un LLM (Ollama) d'interpréter le résultat.
 }
+\author{
+Samira Amani & Samuel Forcier & Taous Sifouane
+}

@@ -6,7 +6,7 @@
 #' @param type_graphique Le type de graphique à afficher (exemple: Heatmap ou mosaique).
 #' @return Les résultats du test de khi-2 et le graphique spécifié en entrée
 #' @export
-#' @author Samira Amani & Samuel Forcier
+#' @author Samira Amani & Samuel Forcier & Taous Sifouane
 # #' @examples
 # #' test<-cbind(c(2,3,4,1,3,4),c(1,1,1,1,2,3))
 # #' plot.chisq_table_context(x=test, type_graphique="heatmap")

@@ -6,7 +6,7 @@
 #' @param x Un tableau de contingence (matrice ou 'table').
 #' @return Un objet de classe "chisq_table_context", qui est une liste contenant les résultats du test et les éléments contextuels
 #' @export
-#' @author Samira Amani & Samuel Forcier
+#' @author Samira Amani & Samuel Forcier & Taous Sifouane
 
 chisq_table_context <- function(x) {
   set.seed(222)

@@ -20,5 +20,5 @@ Effectue le test du Chi-2 sur un tableau de contingence et prépare un objet
 pour l'analyse S3 pour impression (print), résumé (summary) et graphique (plot)
 }
 \author{
-Samira Amani & Samuel Forcier
+Samira Amani & Samuel Forcier & Taous Sifouane
 }

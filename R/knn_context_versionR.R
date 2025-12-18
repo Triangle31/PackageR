@@ -13,6 +13,8 @@
 #'
 #' @return Un objet de classe \code{knn_context}.
 #' @export
+#' @author Samira Amani & Samuel Forcier & Taous Sifouane
+#' 
 knn_context <- function(data, class_var, x1, x2,
                         k = 5,
                         model_ollama = "llama3") {
@@ -88,7 +90,7 @@ knn_context <- function(data, class_var, x1, x2,
 
 #' @export
 print.knn_context <- function(x, ...) {
-  cat("### Modèle k-NN\n")
+  cat("\n")
   cat("Variable de classe :", x$class_var, "\n")
   cat("Prédicteurs        :", x$x1_name, "et", x$x2_name, "\n")
   cat("k                  :", x$k, "\n")
@@ -121,9 +123,6 @@ plot.knn_context <- function(x, ...) {
     ggplot2::theme_minimal()
 
   print(g)
-
-  cat("\n### Interprétation (LLM) :\n")
-  cat(x$llm_text, "\n")
 
   invisible(x)
 }
