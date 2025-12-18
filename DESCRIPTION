@@ -1,0 +1,30 @@
+Package: Equipe4.Chi2
+Title: : Analyse du test du Chi-deux de Pearson avec méthodes S3 (print, summary et plot)
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Samira", family = "Amani", role = c("aut", "cre"),
+           email = "golly-reina-samira.amani.1@ulaval.ca"),
+    person(given = "Samira", family = "Samira", role = "aut",
+           email = "golly-reina-samira.amani.1@ulaval.ca"),
+    person(given = "Samuel", family = "Forcier", role = "aut",
+           email = "samuel.forcier.2@ulaval.ca"))
+Description: Fournit une implémentation complète du test du Chi-deux 
+    de Pearson.
+    Le package permet d'appliquer le test sur n'importe quelle table de 
+    contingence ou matrice d'effectifs, et génère un objet S3 contenant les valeurs 
+    observées et les résidus standardisés de Pearson.
+    Il inclut également des méthodes S3 dédiées (print, summary et plot) pour
+    afficher, résumer et visualiser les résultats du test.
+    Plusieurs types de graphiques sont disponibles, 
+    dont une mosaïque, une carte de chaleur des résidus, une carte de chaleur des 
+    contributions au chi-deux, des comparaisons observé vs attendu, des proportions 
+    par modalité, et un balloon plot.
+    Un jeu de donnérs tiré de HairEyeColor de datasets est inclut dans le package pour illustrer son utilisation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
+Imports: ggplot2, scales, vcd
