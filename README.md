@@ -1,42 +1,58 @@
 
-
-# Projet2_Equipe4
-
-## Télécharger Ollama
+## Télécharger Ollama (version gemma3:4b)
 
 https://ollama.com/
 
-Ouvrir l'app et télécharger la version gemma3:4b en bas à droite
-
-## Pour commencer (dans la console du projet *Equipe4.Chi2*) :
-
-install.packages("devtools")
-
-library(devtools)
-
-devtools::document()
-
-devtools::load_all()
+Ouvrir l'app et télécharger la version gemma3:4b. Important d'avoir cette version.
 
 
-## Après, dans le script R de test :
+## Installation du package
 
-devtools::install("CHEMIN/vers/Equipe4.Chi2")
+devtools::install("chemin vers Equipe4.Chi2")
+
+
+## Utilisation du package
 
 library(Equipe4.Chi2)
 
+## Documentation de chisq_table_context()
 
-## Après modifications de notre package:
+chisq_table_context(data)
 
-devtools::load_all() dans le projet
+data = un tableau de contingence (matrice ou table)
 
-ferme et ouvre le fichier de test
+retourne un objet de classe "chisq_table_context", qui est une liste contenant les résultats du test et les éléments contextuels
 
-remove.packages("Equipe4.Chi2") dans test
+  ### méthodes S3 de chisq_table_context()
+print.chisq_table_context() retourne la statistique du test, la p-value et le degré de liberté
 
-devtools::install("CHEMIN/vers/Equipe4.Chi2") dans test
+summary.chisq_table_context() retourne les résultats du test de façon un peu plus détaillée, accompagnée d'une interprétation contextuelle du LLM Ollama
 
-library(Equipe4.Chi2) dans test
+plot.chisq_table_context(type de graphique) retourne un graphique
+
+Les type de graphiques possibles sont : "heatmap", "heatmap2", "mosaique", "mosaique2", "barplot", "balloon"
+  
+
+## Documentation de knn_context()
+
+knn_context <- function(data, class_var, x1, x2, k = 5)
+
+data = data.frame contenant la variable de classe et les prédicteurs
+
+class_var = nom de la variable de classe
+
+x1, x2 = noms des deux variables numériques
+
+k = nombre de voisins
+
+retourne un objet de classe "knn_context"
+
+  ### méthodes S3 de knn_context()
+
+print.knn_context() retourne les paramètres du test et l'exactitude apparente
+
+plot.knn_context() retourne un graphique des points distingués selon leur classe réelle et leur classe prédite par l’algorithme k-NN.
 
 
-## Le fichier de test est sur teams
+
+
