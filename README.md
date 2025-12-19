@@ -1,3 +1,11 @@
+# Équipe 4
+
+Samuel Forcier
+
+Samira Amani
+
+Taous Sifouane
+
 
 ## Télécharger Ollama (version gemma3:4b)
 
@@ -52,6 +60,7 @@ retourne un objet de classe "knn_context"
 print.knn_context() retourne les paramètres du test et l'exactitude apparente
 
 plot.knn_context() retourne un graphique des points distingués selon leur classe réelle et leur classe prédite par l’algorithme k-NN.
+
 
 
 
