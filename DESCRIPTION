@@ -6,6 +6,8 @@ Authors@R: c(
            email = "golly-reina-samira.amani.1@ulaval.ca"),
     person(given = "Samira", family = "Samira", role = "aut",
            email = "golly-reina-samira.amani.1@ulaval.ca"),
+    person(given = "Taous", family = "Sifouane", role = "aut",
+           email = "taous.sifouane.1@ulaval.ca"),
     person(given = "Samuel", family = "Forcier", role = "aut",
            email = "samuel.forcier.2@ulaval.ca"))
 Description: Fournit une implémentation complète du test du Chi-deux 
