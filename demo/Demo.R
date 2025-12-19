@@ -1,4 +1,9 @@
 
+remove.packages("Equipe4.Chi2")
+devtools::install("C:\\Users\\samfo\\OneDrive\\Bureau\\PackageR")
+library(Equipe4.Chi2)
+
+
 
           # Installation du package
 
