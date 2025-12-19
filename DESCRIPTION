@@ -21,7 +21,8 @@ Description: Fournit une implémentation complète du test du Chi-deux
     dont une mosaïque, une carte de chaleur des résidus, une carte de chaleur des 
     contributions au chi-deux, des comparaisons observé vs attendu, des proportions 
     par modalité, et un balloon plot.
-    Un jeu de donnérs tiré de HairEyeColor de datasets est inclut dans le package pour illustrer son utilisation.
+    Un jeu de donnérs tiré de HairEyeColor de datasets est inclut dans le package pour illustrer son utilisation. Le package inclut également une implémentation de la méthode des k plus proches voisins (kNN) pour l’analyse exploratoire et la contextualisation des observations. Les fonctions associées permettent de calculer les voisins les plus proches à partir de variables numériques, de résumer les résultats sous forme d’objets S3, et de fournir des méthodes dédiées d’affichage et de résumé (print et summary).
+
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
